@@ -13,13 +13,14 @@ class Human{
     greet ( greeting = 'Hi' ) {
 
         console.log( greeting );
-        //return 'Hi';
+        return 'Hi';
 
     }
 
     sleep () {
 
-        console.log( 'zzz...' );
+        console.log( 'Zzz...' );
+        return 'Zzz...'
 
     }
 
@@ -28,24 +29,28 @@ class Human{
         let year = +( new Date().getFullYear());
         let age = year - this.yearOfBirth;
         console.log( `I am ${age} years old` );
+        return `I am ${age} years old`;
 
     }
 
     eat () {
 
         console.log( 'This food is really delicious!' );
+        return 'This food is really delicious!';
 
     }
 
     talk () {
 
         console.log( 'What do you want us to talk about?' );
+        return 'What do you want us to talk about?';
 
     }
 
     walk () {
 
         console.log( 'Time to strech my legs' );
+        return 'Time to strech my legs';
 
     }
 
@@ -70,10 +75,12 @@ class Doctor extends Human {
         if ( this.available ) {
 
             console.log('Take these drugs, they will make you feel better by tomorrow');
+            return 'Take these drugs, they will make you feel better by tomorrow';
 
         } else {
 
             console.log('Not available to attend to you right now');
+            return 'Not available to attend to you right now';
 
         }
 
@@ -84,11 +91,13 @@ class Doctor extends Human {
 
         if ( !this.available ){
 
-            console.log('This food is really delicious!');
+            console.log( 'This food is really delicious!' );
+            return 'This food is really delicious!';
 
         } else {
 
-            console.log('No time to eat, gotta attend to my patients first');
+            console.log( 'No time to eat, gotta attend to my patients first' );
+            return 'No time to eat, gotta attend to my patients first';
 
         }
 
@@ -98,11 +107,13 @@ class Doctor extends Human {
 
         if ( this.available ) {
 
-            console.log('Don\'t be afraid, it doesn\'t hurt');
+            console.log( 'Don\'t be afraid, it doesn\'t hurt' );
+            return 'Don\'t be afraid, it doesn\'t hurt';
 
         } else {
 
-            console.log('Not available to give any injection');
+            console.log( 'Not available to give any injection' );
+            return 'Not available to give any injection';
 
         }
 
@@ -126,6 +137,7 @@ class Driver extends Human {
     eat () {
 
         console.log( 'Abeg give me more of this delicious meal' );
+        return 'Abeg give me more of this delicious meal';
 
     }
 
@@ -134,11 +146,13 @@ class Driver extends Human {
         if ( this.isLicensed ){
 
             console.log( 'I already have a valid license to drive' );
+            return 'I already have a valid license to drive';
 
         } else {
 
             this.isLicensed = true;
             console.log( 'Now I have a valid license to drive' );
+            return 'Now I have a valid license to drive';
 
         }
 
@@ -161,13 +175,15 @@ class Programmer extends Human {
     //overwrites the inherited sleep method
     sleep () {
 
-        console.log( ' No way, sleep is for the weak' );
+        console.log( 'No way, sleep is for the weak' );
+        return 'No way, sleep is for the weak';
 
     }
 
     code () {
 
         console.log( 'code...code...code' );
+        return 'code...code...code';
 
     }
 
