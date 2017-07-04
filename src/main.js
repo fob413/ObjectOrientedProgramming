@@ -122,7 +122,7 @@ class Driver extends Human {
 
     }
 
-    //overwrites inheritted eat function
+    //overwrites inheritted eat method
     eat () {
 
         console.log( 'Abeg give me more of this delicious meal' );
@@ -215,7 +215,7 @@ funsho.greet();
 funsho.sleep();
 console.log( funsho.hands );
 
-exports = {
+module.export = {
 
     Human,
     Driver
