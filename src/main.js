@@ -13,7 +13,7 @@ class Human{
     greet ( greeting = 'Hi' ) {
 
         console.log( greeting );
-        return 'Hi';
+        //return 'Hi';
 
     }
 
