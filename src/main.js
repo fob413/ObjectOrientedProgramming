@@ -218,6 +218,7 @@ console.log( funsho.hands );
 exports = {
 
     Human,
-    Driver
+    Driver,
+    greet
 
 }
