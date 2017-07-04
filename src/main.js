@@ -234,6 +234,8 @@ console.log( funsho.hands );
 export  {
 
     Human,
-    Driver
+    Driver,
+    Doctor,
+    Programmer
 
 }

@@ -10,11 +10,11 @@ from '../src/main.js';
 
 describe ( "objectOrientedProgramming", function(){
 
-    describe ( "user can greet", function() {
+    describe ( "Human", function() {
 
-        it('should return Hi when Driver.greet() ', function(){
+        it('Human.greet() says Hi', function(){
 
-            let hammed = new Driver ( 1981, 'black', 'male', false );
+            let hammed = new Human ( 1981, 'black', 'male' );
             assert.equal(hammed.greet(), 'Hi');
 
         });
