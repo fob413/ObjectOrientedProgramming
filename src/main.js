@@ -29,7 +29,7 @@ class Human{
         let year = +( new Date().getFullYear());
         let age = year - this.yearOfBirth;
         console.log( `I am ${age} years old` );
-        return `I am ${age} years old`;
+        return age;
 
     }
 
@@ -49,8 +49,8 @@ class Human{
 
     walk () {
 
-        console.log( 'Time to strech my legs' );
-        return 'Time to strech my legs';
+        console.log( 'Time to stretch my legs' );
+        return 'Time to stretch my legs';
 
     }
 
@@ -188,48 +188,6 @@ class Programmer extends Human {
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-let mike = new Human ( 1994, 'black', 'male' );
-mike.greet();
-console.log( mike.legs );
-console.log( mike.sex );
-mike.calculateAge();
-mike.talk();
-mike.eat();
-mike.walk();
-
-let susan = new Doctor ( 1997, 'light', 'female', false, 2000 );
-
-susan.greet( 'Hi, I am Susan' );
-console.log( susan.legs );
-susan.eat();
-susan.giveInjection();
-
-let hammed = new Driver ( 1981, 'black', 'male', false );
-console.log( hammed.isLicensed );
-hammed.greet();
-
-let funsho = new Programmer();
-funsho.code();
-funsho.greet();
-funsho.sleep();
-console.log( funsho.hands );
 
 export  {
 
