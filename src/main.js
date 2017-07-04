@@ -119,6 +119,16 @@ class Doctor extends Human {
 
     }
 
+    yearsOfPractice () {
+
+        let year = +( new Date().getFullYear());
+        let docYears = year - this.practice;
+        console.log(`I've been practising as a Doctor for ${docYears} years`);
+        return docYears;
+
+
+    }
+
 }
 
 
@@ -152,7 +162,7 @@ class Driver extends Human {
 
             this.isLicensed = true;
             console.log( 'Now I have a valid license to drive' );
-            return 'Now I have a valid license to drive';
+            return this.isLicensed;
 
         }
 
@@ -182,8 +192,17 @@ class Programmer extends Human {
 
     code () {
 
-        console.log( 'code...code...code' );
-        return 'code...code...code';
+        if ( this.canCode ){
+
+            console.log( 'code...code...code' );
+            return 'code...code...code';
+        
+        } else {
+
+            console.log( "Learning to code..." );
+            return 'Learning to code...'
+
+        }
 
     }
 
