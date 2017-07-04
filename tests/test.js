@@ -1,13 +1,12 @@
+const assert = require ( "chai" ).assert;
+
 import  {
 
     Humanm, Driver
 
 }
 
-from '../src/main.js'
-
-const assert = require ( "chai" ).assert;
-
+from '../src/main.js';
 
 describe ( "objectOrientedProgramming", function(){
 
