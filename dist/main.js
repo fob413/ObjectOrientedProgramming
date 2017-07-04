@@ -232,7 +232,7 @@ funsho.greet();
 funsho.sleep();
 console.log(funsho.hands);
 
-module.exports = {
+exports = {
 
     Human: Human,
     Driver: Driver

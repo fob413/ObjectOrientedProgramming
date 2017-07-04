@@ -6,6 +6,7 @@ import  {
     Humanm, Driver
 
 }
+from '../src/main.js'
 
 describe ( "objectOrientedProgramming", function(){
 
