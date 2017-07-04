@@ -13,6 +13,7 @@ class Human{
     greet ( greeting = 'Hi' ) {
 
         console.log( greeting );
+        return 'Hi';
 
     }
 
@@ -213,3 +214,10 @@ funsho.code();
 funsho.greet();
 funsho.sleep();
 console.log( funsho.hands );
+
+module.exports = {
+
+    Human: Human,
+    Driver: Driver,
+
+}
