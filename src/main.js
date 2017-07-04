@@ -215,7 +215,7 @@ funsho.greet();
 funsho.sleep();
 console.log( funsho.hands );
 
-export = {
+export  {
 
     Human,
     Driver
