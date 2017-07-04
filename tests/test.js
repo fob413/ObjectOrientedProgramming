@@ -1,6 +1,12 @@
 const assert = require ( "chai" ).assert;
 const myApp = require ( "../src/main.js" );
 
+import  {
+
+    Humanm, Driver
+
+}
+
 describe ( "objectOrientedProgramming", function(){
 
     describe ( "user can greet", function() {
