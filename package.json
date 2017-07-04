@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "description": "OOP implementation of a real world Scenario or problem",
   "main": "src/main.js",
+  "directories": {
+    "test": "tests"
+  },
   "scripts": {
-    "build": "babel --presets es2015 src -d dist"
+    "build": "babel --presets es2015 src -d dist",
+    "test": "mocha tests/test.js"
   },
   "author": "Funsho Oluyole-Balogun",
   "license": "ISC",
