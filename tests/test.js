@@ -2,7 +2,7 @@ const assert = require ( "chai" ).assert;
 
 import  {
 
-    Humanm, Driver
+    Human, Driver
 
 }
 
