@@ -26,6 +26,7 @@ var Human = function () {
 
 
             console.log(greeting);
+            return 'Hi';
         }
     }, {
         key: 'sleep',
@@ -230,3 +231,10 @@ funsho.code();
 funsho.greet();
 funsho.sleep();
 console.log(funsho.hands);
+
+module.exports = {
+
+    Human: Human,
+    Driver: Driver
+
+};
