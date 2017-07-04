@@ -9,6 +9,7 @@
   "scripts": {
     "build": "babel-node src/main.js",
     "build": "babel src -d dist",
+    "build": "babel --presets es2015 src -d dist",
     "test": "mocha --compilers js:babel-register tests/test.js"
   },
   "author": "Funsho Oluyole-Balogun",
